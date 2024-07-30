@@ -13,7 +13,7 @@ function M.activate()
   if aug then return end
 
   local last_cmd = 0
-  aug = augroups.Augroup("msgclearer://")
+  aug = augroups.Augroup("msgcleaner://")
   aug:repeats("CmdlineLeave", { callback = function() last_cmd = os.time() end })
 
   local last_clear = 0
